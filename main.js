@@ -1,5 +1,6 @@
 const square = document.getElementById('carre');
 const style =  window.getComputedStyle(square);
+const rgb = document.getElementById('infoBoss');
 
 square.addEventListener('click', infosCarre);
 
@@ -20,14 +21,28 @@ const vassal4 = document.getElementById("carreQuatre");
 
 const boss = document.getElementById("carreBoss");
 
-vassal1.addEventListener('click', changeColor(vassal1));
-vassal2.addEventListener('click', changeColor(vassal2));
-vassal3.addEventListener('click', changeColor(vassal3));
-vassal4.addEventListener('click', changeColor(vassal4));
 
-changeColor(vassal){
-    boss.style.backgroundColor = vassal.style.backgroundColor;
+vassal1.addEventListener('click', function() {
+    changeColor(vassal1)
+});
+
+vassal2.addEventListener('click', function() {
+    changeColor(vassal2)
+});
+
+vassal3.addEventListener('click', function() {
+    changeColor(vassal3)
+});
+
+vassal4.addEventListener('click', function() {
+    changeColor(vassal4)
+});
+
+function changeColor(vassal){
+   styleVassal = getComputedStyle(vassal)
+    boss.style.backgroundColor = styleVassal.backgroundColor;
+    rgb.value = styleVassal.Color
+
 }
 
-
-// boss.style.backgroundColor = 
+// boss.style.backgroundColor = vassal1.getComputedStyle();
