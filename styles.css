@@ -26,11 +26,58 @@ h1{
     width: 200px;
     background-color: rgb(40, 121, 94);
     margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     justify-content: center;
     color: white;
-  
 }
 
+#container {
+    display: flex;
+}
+
+#carreUn, #carreDeux, #carreTrois, #carreQuatre {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#carreUn{
+background-color: #a01818;
+}
+
+#carreDeux{
+    background-color: #4425b4;
+}
+
+#carreTrois{
+    background-color: #28c9a6;
+}
+
+#carreQuatre{
+    background-color: #2b78cf;
+}
+
+
+#carreBoss {
+    background-color: #ffffff;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
