@@ -13,60 +13,60 @@
     <h1>Exercices JS - Base</h1>
 
     <h2>I.Exercice 1 <br><br>
+    Créer une page web affichant un carré 200 x 200 pixels de la couleur et un contenu texte de votre choix.</h2> <br>
 
-        Créer une page web affichant un carré 200 x 200 pixels de la couleur et un contenu texte de votre choix.</h2> <br>
+    <p>
+        En cliquant sur la forme, une boîte de dialogue (alerte) affiche les informations suivantes : <br><br>
+        Couleur du texte et couleur de fond<br>
+        Hauteur et largeur du carré<br>
+        Nom de la classe du carré (class : "carre" par exemple)<br>
+        Police et taille du texte
+    </p>
 
-        <p>En cliquant sur la forme, une boîte de dialogue (alerte) affiche les informations suivantes : <br><br>
-            Couleur du texte et couleur de fond<br>
-            Hauteur et largeur du carré<br>
-            Nom de la classe du carré (class : "carre" par exemple)<br>
-            Police et taille du texte</p>
+    <div id="carre">
+        <div class="textCarre">TEXTE</div>
+    </div>
 
+    <h2>II.
+    Exercice 2 <br><br>
 
+    Créer une page web affichant 4 carrés de 200 x 200 pixels avec un fond de couleur différente pour chaque carré</h2> <br>
 
-        <div id="carre">
-            <div class="textCarre">TEXTE</div>
-        </div>
+    <p>En cliquant sur n'importe quel carré du haut, le carré du bas prend sa couleur et le code couleur du carré sélectionné s’affiche</p>
 
-        <h2>II.
-            Exercice 2 <br><br>
+    <div id="container">
+        <div id="carreUn">
+            1
+            </div>
 
-            Créer une page web affichant 4 carrés de 200 x 200 pixels avec un fond de couleur différente pour chaque carré</h2> <br>
+        <div id="carreDeux">
+            2
+            </div>
 
-            <p>En cliquant sur n'importe quel carré du haut, le carré du bas prend sa couleur et le code couleur du carré sélectionné s’affiche</p>
+        <div id="carreTrois">
+            3
+            </div>
 
-<div id="container">
-    <div id="carreUn">
-        1
-        </div>
+        <div id="carreQuatre">
+            4
+            </div>
+    </div>
 
-    <div id="carreDeux">
-        2
-        </div>
-
-    <div id="carreTrois">
-        3
-        </div>
-
-    <div id="carreQuatre">
-        4
-        </div>
-</div>
-
-<div id="carreBoss">
-    <p id="infoBoss">default</p>
-</div>
+    <div id="carreBoss">
+        <p id="infoBoss">default</p>
+    </div>
 
 
-<h2>III. Exercice 3 <br><br>
+    <h2>III. Exercice 3 <br><br>
 
     Créer une page web affichant 4 carrés de 200 x 200 pixels avec un fond vert adoptant 
     la disposition suivante (voir capture). Ils seront numérotés de 1 à 4.</h2> <br>
 
-    <p>En cliquant sur n'importe quel carré, celui-ci rétrécit de 10%, décrit une rotation de 360 degrés et 
+    <p>
+        En cliquant sur n'importe quel carré, celui-ci rétrécit de 10%, décrit une rotation de 360 degrés et 
         prend un fond rouge. En recliquant dessus, le carré reprend ses propriétés initiales (voir animation 
         en annexe)
-        </p>
+    </p>
 
 
 
@@ -89,7 +89,7 @@
     </div>
 
 
-<h2>IV. Exercice 4 <br> <br>
+    <h2>IV. Exercice 4 <br> <br>
 
     Adapter la couleur d’un background en JS </h2> <br>
 
@@ -99,23 +99,54 @@
         => Le nom du réseau social apparaît  <br>
         => Les bords de l’icône s’arrondissent <br>
         => Une ombre apparaît derrière l’icône <br> <br>
-        Lorsque l’on reclique sur une icône, le background redevient gris et l’icône reprend son 
+        Lorsque l’on reclique sur une icône, le background redevient gris et l’icône reprend son aspect d’origine
+    </p>
 
         
-<div id="title"><h3>Follow us !</h3></div>
-
+    <div><h3 id="title">Follow us !</h3>
         <div id="containerTrois">
-
-            <div id="facebook" class="social"><i class="fa-brands fa-facebook"></i></div>
-            <div id="twitter" class="social"><i class="fa-brands fa-twitter"></i></div>
-            <div id="instagram" class="social"><i class="fa-brands fa-instagram"></i></div>
-            
+            <div id="facebook" class="social" data-color="#153d79"><i class="fa-brands fa-facebook"></i>
+                <p id="socialName">Facebook</p>
+            </div>
+            <div id="twitter" class="social" data-color="#3390db"><i class="fa-brands fa-twitter"></i>
+                <p id="socialName">Twitter</p>
+            </div>
+            <div id="instagram" class="social" data-color="#a51641"><i class="fa-brands fa-instagram"></i>
+                <p id="socialName">Instagram</p>
+            </div>  
         </div>
+    </div>
+    
+    
+    <h2>V. Exercice 5 <br> <br>
+        
+        Afficher des citations depuis un fichier JS </h2> <br>
+        
+        <p>Pour cela il faudra : <br>
+            Créer un fichier quotes.js dans lequel instancier un tableau associatif <br>
+            Créer un fichier JS parcourant les citations afin de les afficher <br>
+            Rajouter un système de favoris <br>
+            BONUS (à voir avec le formateur) : stocker les favoris dans le localStorage (se documenter 
+            dessus)</p>
+
+
+            <div id="containerQuatre">
+                <div id="quoteCards">
+                    <div class="quoteCard">
+                        <article id="quote">Quelques citations de figures historiques Arabes: <article>
+                    </div>
+                </div>
+            </div>
 
 
 
 
-    <script src="main.js"></script>
+
+            
+</div>
+
     <script src="https://kit.fontawesome.com/a99d4df9ac.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="quotes.js"></script>
 </body>
 </html>

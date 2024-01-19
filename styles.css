@@ -155,16 +155,18 @@ background-color: #a01818;
 
 .social {
     display: flex;
+    flex-direction: column;
     height: 100px;
     width: 100px;
     margin-top: 5px;
     margin-bottom: 5px;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
+    transition: 0.7s;
 }
 
 .socialInterracted {
+
     display: flex;
     height: 100px;
     width: 100px;
@@ -175,10 +177,25 @@ background-color: #a01818;
     transition: 0.3s;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    #socialName{
+        display: block;
+        opacity: 1;
+    }
 }
 
 i{
     font-size: 35px;
+}
+
+#socialName {
+    
+    display: none;
+    opacity: 0;
+    transition:
+      transform 1s,
+      opacity 0.3s,
+      display 0.3s allow-discrete;
 }
 #title {
     display: flex;
@@ -194,5 +211,38 @@ i{
     }
 #instagram{
     background-color: #a51641;
+}
+
+/* +++++++++++++++++++++EXO5+++++++++++++++++++++++++++ */
+
+#containerQuatre{
+    margin: 200px 0 400px 0;
+
+}
+
+#quoteCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dad1ab;
+    border-radius: 20px;
+    padding: 50px;
     
-    }
+}
+
+
+.quoteCard{
+    border-radius: 10px;
+    padding: 30px 40px 30px 40px;
+    background-color: rgb(221, 221, 204);
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#quote{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    color: black;
+
+}
+

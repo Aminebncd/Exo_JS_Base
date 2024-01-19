@@ -19,7 +19,7 @@ function infosCarre(){
 
 
 
-// +++++++++++++++++++++EXO2+++++++++++
+// +++++++++++++++++++++EXO2+++++++++++++++++++++++
 
 const vassal1 = document.getElementById("carreUn");
 const vassal2 = document.getElementById("carreDeux");
@@ -78,28 +78,33 @@ function interact(){
 const socials = document.querySelectorAll(".social");
 const wrap = document.getElementById('wrapper');
 
-defaultColor = getComputedStyle(wrap);
-// console.log(defaultColor.backgroundColor)
 
 socials.forEach((social) => {
     social.addEventListener("click", select)
-    
 })
 
 
 function select(){
-    
+
     this.classList.toggle('socialInterracted')
     paint = getComputedStyle(this)
-    
-    if (wrap.style.backgroundColor == ('rgb(17, 25, 37)')){
+
+    if (this.classList.contains('socialInterracted')){
         wrap.style.backgroundColor = paint.backgroundColor
-        console.log(wrap.style.backgroundColor)
     } else{
         wrap.style.backgroundColor = ('rgb(17, 25, 37)')
-        console.log(wrap.style.backgroundColor)
     }
-    
-    
-    // console.log(wrap.style.backgroundColor)
+
 }
+
+
+// ++++++++++++++++++++EXO5++++++++++++++++++++++++++++++
+// import {quotes} from quotes.js
+
+
+
+// const quoteCards = document.querySelector(".quoteCards")
+// const quoteCard = document.querySelector(".quoteCard")
+    
+
+
