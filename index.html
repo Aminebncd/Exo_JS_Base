@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exo JS Base</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
 <div id="wrapper">
 
     <h1>Exercices JS - Base</h1>
+
     <h2>I.Exercice 1 <br><br>
-        Créer une page web affichant un carré 200 x 200 pixels de la couleur et un contenu texte de votre choix.</h2>
+
+        Créer une page web affichant un carré 200 x 200 pixels de la couleur et un contenu texte de votre choix.</h2> <br>
+
         <p>En cliquant sur la forme, une boîte de dialogue (alerte) affiche les informations suivantes : <br><br>
             Couleur du texte et couleur de fond<br>
             Hauteur et largeur du carré<br>
@@ -25,8 +29,10 @@
         </div>
 
         <h2>II.
-            Exercice 2
-            Créer une page web affichant 4 carrés de 200 x 200 pixels avec un fond de couleur différente pour chaque carré</h2>
+            Exercice 2 <br><br>
+
+            Créer une page web affichant 4 carrés de 200 x 200 pixels avec un fond de couleur différente pour chaque carré</h2> <br>
+
             <p>En cliquant sur n'importe quel carré du haut, le carré du bas prend sa couleur et le code couleur du carré sélectionné s’affiche</p>
 
 <div id="container">
@@ -48,9 +54,68 @@
 </div>
 
 <div id="carreBoss">
-    <p id="infoBoss"></p>
+    <p id="infoBoss">default</p>
 </div>
 
+
+<h2>III. Exercice 3 <br><br>
+
+    Créer une page web affichant 4 carrés de 200 x 200 pixels avec un fond vert adoptant 
+    la disposition suivante (voir capture). Ils seront numérotés de 1 à 4.</h2> <br>
+
+    <p>En cliquant sur n'importe quel carré, celui-ci rétrécit de 10%, décrit une rotation de 360 degrés et 
+        prend un fond rouge. En recliquant dessus, le carré reprend ses propriétés initiales (voir animation 
+        en annexe)
+        </p>
+
+
+
+    <div id="containerDeux">
+        <div id="un" class="carre">
+            1
+            </div>
+    
+        <div id="deux" class="carre">
+            2
+            </div>
+    
+        <div id="trois" class="carre">
+            3
+            </div>
+    
+        <div id="quatre" class="carre">
+            4
+            </div>
+    </div>
+
+
+<h2>IV. Exercice 4 <br> <br>
+
+    Adapter la couleur d’un background en JS </h2> <br>
+
+    <p>Le background est gris. 3 icônes sont présentes : <br> <br>
+        Lorsque l’on clique sur l’une des icônes <br>
+        => Le background prend sa couleur <br>
+        => Le nom du réseau social apparaît  <br>
+        => Les bords de l’icône s’arrondissent <br>
+        => Une ombre apparaît derrière l’icône <br> <br>
+        Lorsque l’on reclique sur une icône, le background redevient gris et l’icône reprend son 
+
+        
+<div id="title"><h3>Follow us !</h3></div>
+
+        <div id="containerTrois">
+
+            <div id="facebook" class="social"><i class="fa-brands fa-facebook"></i></div>
+            <div id="twitter" class="social"><i class="fa-brands fa-twitter"></i></div>
+            <div id="instagram" class="social"><i class="fa-brands fa-instagram"></i></div>
+            
+        </div>
+
+
+
+
     <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/a99d4df9ac.js" crossorigin="anonymous"></script>
 </body>
 </html>
