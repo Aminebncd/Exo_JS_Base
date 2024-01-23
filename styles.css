@@ -1,248 +1,346 @@
 * {
-    padding: 0;
-    margin: 0;
-    vertical-align: top;
-  }
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+}
 
 #wrapper {
-    
-    color: #ffffff;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
-  background-color: rgb(17, 25, 37);
+  min-height: 100vh;
+  background-color: rgb(64 126 217);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 0 15%;
   transition: 1s;
 }
 
-h1{
-    padding-top: 50px;
+h1 {
+  padding-top: 50px;
 }
-
-
 
 /* ---------------EXO 1---------------- */
 #carre {
-    display: flex;
-    height: 200px;
-    width: 200px;
-    background-color: rgb(40, 121, 94);
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-    color: white;
+  display: flex;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(40, 121, 94);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
-
 
 /* ---------------EXO 2---------------- */
 
-
 #container {
-    display: flex;
+  display: flex;
 }
 
-#carreUn, #carreDeux, #carreTrois, #carreQuatre {
-    display: flex;
-    height: 150px;
-    width: 150px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
+#carreUn,
+#carreDeux,
+#carreTrois,
+#carreQuatre {
+  display: flex;
+  height: 150px;
+  width: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
 }
 
-#carreUn{
-background-color: #a01818;
+#carreUn {
+  background-color: #a01818;
 }
 
-#carreDeux{
-    background-color: #4425b4;
+#carreDeux {
+  background-color: #4425b4;
 }
 
-#carreTrois{
-    background-color: #28c9a6;
+#carreTrois {
+  background-color: #28c9a6;
 }
 
-#carreQuatre{
-    background-color: #2b78cf;
+#carreQuatre {
+  background-color: #b6c22e;
 }
-
 
 #carreBoss {
-    background-color: #ffffff;
-    display: flex;
-    height: 200px;
-    width: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
+  background-color: #ffffff;
+  display: flex;
+  height: 200px;
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
 }
-
-
 
 /* ---------------EXO 3---------------- */
 
-
 #containerDeux {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 160px 160px;
-    grid-template-rows: 160px 160px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 160px 160px;
+  grid-template-rows: 160px 160px;
 }
 
 .carre {
-    height: 150px;
-    width: 150px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: green;
-    transition: 1s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 150px;
+  width: 150px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: green;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carreTransformed {
-    height: 150px;
-    width: 150px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: rgb(187, 9, 9);
-    transform:  scale(0.9) rotate(360deg);
-    transition: 1s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 150px;
+  width: 150px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: rgb(187, 9, 9);
+  transform: scale(0.9) rotate(360deg);
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
-
-
-
-
-
-
 
 /* ---------------EXO 4---------------- */
 
-#title{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+#title {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 #containerTrois {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    justify-content: space-around;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  justify-content: space-around;
 }
 
 .social {
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    width: 100px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    justify-content: center;
-    align-items: center;
-    transition: 0.7s;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
 }
 
 .socialInterracted {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-    display: flex;
-    height: 100px;
-    width: 100px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-    #socialName{
-        display: block;
-        opacity: 1;
-    }
+  #socialName {
+    display: block;
+    opacity: 1;
+  }
 }
 
-i{
-    font-size: 35px;
+i {
+  font-size: 35px;
 }
 
 #socialName {
-    
-    display: none;
-    opacity: 0;
-    transition:
-      transform 1s,
-      opacity 0.3s,
-      display 0.3s allow-discrete;
+  display: none;
+  opacity: 0;
+  transition: transform 1s, opacity 0.3s, display 0.3s allow-discrete;
 }
 #title {
-    display: flex;
+  display: flex;
 }
 
-#facebook{
-    background-color: #153d79;
-
+#facebook {
+  background-color: #153d79;
 }
-#twitter{
-    background-color: #3390db;
-    
-    }
-#instagram{
-    background-color: #a51641;
+#twitter {
+  background-color: #3390db;
 }
-
+#instagram {
+  background-color: #a51641;
+}
 /* +++++++++++++++++++++EXO5+++++++++++++++++++++++++++ */
 
-#containerQuatre{
-    margin: 200px 0 400px 0;
-
+#containerQuatre {
+  margin: 200px 0 200px 0;
 }
 
-#quoteCards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #dad1ab;
-    border-radius: 20px;
-    padding: 50px;
-    
+#quoteCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dad1ab;
+  border-radius: 20px;
+  padding: 50px;
+
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    -4px 11px 45px 21px rgba(69, 67, 59, 0.45);
+  box-shadow: 0px 10px 13px -7px #0000004d,
+    -4px 11px 45px 21px rgba(69, 67, 59, 0.45);
 }
 
-
-.quoteCard{
-    border-radius: 10px;
-    padding: 30px 40px 30px 40px;
-    background-color: rgb(221, 221, 204);
-    margin: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.quoteCard {
+  border-radius: 10px;
+  padding: 30px 40px 30px 40px;
+  background-color: rgb(221, 221, 204);
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-#quote{
-    font-family:'Times New Roman', Times, serif;
-    font-style: italic;
-    color: black;
-
+.fav {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  margin-top: 10px;
+  color: #00000000;
 }
 
+.fav i {
+  transition: 0.2s;
+  font-size: 1.5em;
+}
+
+.fav i.active {
+  color: rgba(183, 166, 15, 0.683);
+}
+
+#quote {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 22px;
+  color: black;
+}
+
+/* +++++++++++++++++++++++EXO6++++++++++++++++++++++++++++++++ */
+
+#containerCinq {
+  margin: 200px 0 200px 0;
+}
+
+.board {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+  /* background-color: #aed6db36; */
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+}
+
+.cell.croix,
+.cell.rond {
+  cursor: not-allowed;
+}
+
+/* for cross */
+.board.croix .cell:not(.rond):not(.croix):hover {
+  background: #d65050;
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cell.croix {
+  background: #a01818;
+}
+
+.board.rond .cell:not(.croix):not(.rond):hover {
+  background: #5361ce;
+  background-size: 80% 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cell.rond {
+  background: #1828a0;
+}
+
+#restartButton {
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292e;
+  cursor: pointer;
+
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+}
+
+/* +++++++++++++++++++++++++EXO7+++++++++++++++++++++++++ */
+
+#containerSix {
+  margin: 200px 0 200px 0;
+}
+
+#cases {
+  width: 900px;
+  height: 900px;
+  display: grid;
+  flex-wrap: wrap;
+}
+
+.case {
+  height: 60px;
+  width: 60px;
+}

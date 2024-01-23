@@ -1,152 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exo JS Base</title>
-    <link rel="stylesheet" href="styles.css">
-    
-</head>
-<body>
-<div id="wrapper">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Exercices JS - Base</h1>
+      <br /><br />
 
-    <h1>Exercices JS - Base</h1>
+      <h2>
+        I.Exercice 1 <br /><br />
+        Créer une page web affichant un carré 200 x 200 pixels de la couleur et
+        un contenu texte de votre choix.
+      </h2>
+      <br />
 
-    <h2>I.Exercice 1 <br><br>
-    Créer une page web affichant un carré 200 x 200 pixels de la couleur et un contenu texte de votre choix.</h2> <br>
-
-    <p>
-        En cliquant sur la forme, une boîte de dialogue (alerte) affiche les informations suivantes : <br><br>
-        Couleur du texte et couleur de fond<br>
-        Hauteur et largeur du carré<br>
-        Nom de la classe du carré (class : "carre" par exemple)<br>
+      <p>
+        En cliquant sur la forme, une boîte de dialogue (alerte) affiche les
+        informations suivantes : <br /><br />
+        Couleur du texte et couleur de fond<br />
+        Hauteur et largeur du carré<br />
+        Nom de la classe du carré (class : "carre" par exemple)<br />
         Police et taille du texte
-    </p>
+      </p>
 
-    <div id="carre">
+      <div id="carre">
         <div class="textCarre">TEXTE</div>
-    </div>
+      </div>
 
-    <h2>II.
-    Exercice 2 <br><br>
+      <h2>
+        II. Exercice 2 <br /><br />
 
-    Créer une page web affichant 4 carrés de 200 x 200 pixels avec un fond de couleur différente pour chaque carré</h2> <br>
+        Créer une page web affichant 4 carrés de 200 x 200 pixels avec un fond
+        de couleur différente pour chaque carré
+      </h2>
+      <br />
 
-    <p>En cliquant sur n'importe quel carré du haut, le carré du bas prend sa couleur et le code couleur du carré sélectionné s’affiche</p>
+      <p>
+        En cliquant sur n'importe quel carré du haut, le carré du bas prend sa
+        couleur et le code couleur du carré sélectionné s’affiche
+      </p>
 
-    <div id="container">
-        <div id="carreUn">
-            1
-            </div>
+      <div id="container">
+        <div id="carreUn">1</div>
 
-        <div id="carreDeux">
-            2
-            </div>
+        <div id="carreDeux">2</div>
 
-        <div id="carreTrois">
-            3
-            </div>
+        <div id="carreTrois">3</div>
 
-        <div id="carreQuatre">
-            4
-            </div>
-    </div>
+        <div id="carreQuatre">4</div>
+      </div>
 
-    <div id="carreBoss">
+      <div id="carreBoss">
         <p id="infoBoss">default</p>
-    </div>
+      </div>
 
+      <h2>
+        III. Exercice 3 <br /><br />
 
-    <h2>III. Exercice 3 <br><br>
+        Créer une page web affichant 4 carrés de 200 x 200 pixels avec un fond
+        vert adoptant la disposition suivante (voir capture). Ils seront
+        numérotés de 1 à 4.
+      </h2>
+      <br />
 
-    Créer une page web affichant 4 carrés de 200 x 200 pixels avec un fond vert adoptant 
-    la disposition suivante (voir capture). Ils seront numérotés de 1 à 4.</h2> <br>
+      <p>
+        En cliquant sur n'importe quel carré, celui-ci rétrécit de 10%, décrit
+        une rotation de 360 degrés et prend un fond rouge. En recliquant dessus,
+        le carré reprend ses propriétés initiales (voir animation en annexe)
+      </p>
 
-    <p>
-        En cliquant sur n'importe quel carré, celui-ci rétrécit de 10%, décrit une rotation de 360 degrés et 
-        prend un fond rouge. En recliquant dessus, le carré reprend ses propriétés initiales (voir animation 
-        en annexe)
-    </p>
+      <div id="containerDeux">
+        <div id="un" class="carre">1</div>
 
+        <div id="deux" class="carre">2</div>
 
+        <div id="trois" class="carre">3</div>
 
-    <div id="containerDeux">
-        <div id="un" class="carre">
-            1
-            </div>
-    
-        <div id="deux" class="carre">
-            2
-            </div>
-    
-        <div id="trois" class="carre">
-            3
-            </div>
-    
-        <div id="quatre" class="carre">
-            4
-            </div>
-    </div>
+        <div id="quatre" class="carre">4</div>
+      </div>
 
+      <h2>
+        IV. Exercice 4 <br />
+        <br />
 
-    <h2>IV. Exercice 4 <br> <br>
+        Adapter la couleur d’un background en JS
+      </h2>
+      <br />
 
-    Adapter la couleur d’un background en JS </h2> <br>
+      <p>
+        Le background est gris. 3 icônes sont présentes : <br />
+        <br />
+        Lorsque l’on clique sur l’une des icônes <br />
+        => Le background prend sa couleur <br />
+        => Le nom du réseau social apparaît <br />
+        => Les bords de l’icône s’arrondissent <br />
+        => Une ombre apparaît derrière l’icône <br />
+        <br />
+        Lorsque l’on reclique sur une icône, le background redevient gris et
+        l’icône reprend son aspect d’origine
+      </p>
 
-    <p>Le background est gris. 3 icônes sont présentes : <br> <br>
-        Lorsque l’on clique sur l’une des icônes <br>
-        => Le background prend sa couleur <br>
-        => Le nom du réseau social apparaît  <br>
-        => Les bords de l’icône s’arrondissent <br>
-        => Une ombre apparaît derrière l’icône <br> <br>
-        Lorsque l’on reclique sur une icône, le background redevient gris et l’icône reprend son aspect d’origine
-    </p>
-
-        
-    <div><h3 id="title">Follow us !</h3>
+      <div>
+        <h3 id="title">Follow us !</h3>
         <div id="containerTrois">
-            <div id="facebook" class="social" data-color="#153d79"><i class="fa-brands fa-facebook"></i>
-                <p id="socialName">Facebook</p>
-            </div>
-            <div id="twitter" class="social" data-color="#3390db"><i class="fa-brands fa-twitter"></i>
-                <p id="socialName">Twitter</p>
-            </div>
-            <div id="instagram" class="social" data-color="#a51641"><i class="fa-brands fa-instagram"></i>
-                <p id="socialName">Instagram</p>
-            </div>  
+          <div id="facebook" class="social" data-color="#153d79">
+            <i class="fa-brands fa-facebook"></i>
+            <p id="socialName">Facebook</p>
+          </div>
+          <div id="twitter" class="social" data-color="#3390db">
+            <i class="fa-brands fa-twitter"></i>
+            <p id="socialName">Twitter</p>
+          </div>
+          <div id="instagram" class="social" data-color="#a51641">
+            <i class="fa-brands fa-instagram"></i>
+            <p id="socialName">Instagram</p>
+          </div>
         </div>
-    </div>
-    
-    
-    <h2>V. Exercice 5 <br> <br>
-        
-        Afficher des citations depuis un fichier JS </h2> <br>
-        
-        <p>Pour cela il faudra : <br>
-            Créer un fichier quotes.js dans lequel instancier un tableau associatif <br>
-            Créer un fichier JS parcourant les citations afin de les afficher <br>
-            Rajouter un système de favoris <br>
-            BONUS (à voir avec le formateur) : stocker les favoris dans le localStorage (se documenter 
-            dessus)</p>
+      </div>
 
+      <h2>
+        V. Exercice 5 <br />
+        <br />
 
-            <div id="containerQuatre">
-                <div id="quoteCards">
-                    <div class="quoteCard">
-                        <article id="quote">Quelques citations de figures historiques Arabes: <article>
-                    </div>
-                </div>
+        Afficher des citations depuis un fichier JS
+      </h2>
+      <br />
+
+      <p>
+        Pour cela il faudra : <br /><br />
+        Créer un fichier quotes.js dans lequel instancier un tableau associatif
+        <br />
+        Créer un fichier JS parcourant les citations afin de les afficher <br />
+        Rajouter un système de favoris <br />
+        BONUS (à voir avec le formateur) : stocker les favoris dans le
+        localStorage (se documenter dessus)
+      </p>
+
+      <div id="containerQuatre">
+        <div id="quoteCards">
+          <div class="quoteCard">
+            <article id="quote">
+              Quelques citations de figures historiques Arabes:
+            </article>
+            <div class="fav">
+              <i id="star" class="fa-solid fa-star"></i>
             </div>
+          </div>
+        </div>
+      </div>
 
+      <h2>
+        III. Exercice 6 <br />
+        <br />
 
+        Créer une grille de morpion (3 x 3 cases). Cases de 200 x 200 pixels
+        avec un intervalle de 5px.
+      </h2>
+      <br />
 
+      <p>
+        Le comportement du script sera le suivant : <br /><br />
+        A chaque clic, la case prend alternativement la valeur "X" ou "O".<br />
+        On ne pourra plus cliquer sur la case pour en changer la valeur une fois
+        que X ou O y est placé.<br />
+        Un message affiche le message "C'est au tour de X ou O"<br />
+        Une fois la grille remplie, un message affiche "Partie terminée"
+      </p>
 
+      <div id="containerCinq">
+        <div class="board" id="board">
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
+          <div class="cell" data-cell></div>
 
-            
-</div>
+          <button id="restartButton">Restart</button>
+        </div>
+      </div>
 
-    <script src="https://kit.fontawesome.com/a99d4df9ac.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-    <script src="quotes.js"></script>
-</body>
+      <h2>
+        IV. Exercice 7 <br /><br />
+        Le but de cet exercice est de faire apparaitre des carrés en appuyant
+        sur une touche du clavier, et les faire disparaître en en pressant une
+        autre
+      </h2>
+      <br />
+
+      <p>
+        Le comportement du script sera le suivant :<br /><br />
+        A chaque pression sur la touche du bas du clavier, on fait apparaître un
+        carré de 60 x 60 pixels d'une couleur aléatoire.<br />
+        A chaque pression sur la touche du haut, on enlève la dernière case
+        ajoutée.<br />
+        *bonus* Une fois la grille de 15 cases par 15 cases affichée, on pourra
+        cliquer sur les cases pour changer leur couleur en noir afin de recréer
+        le modèle de l'emoji donné en exemple (seulement les carrés noirs)
+      </p>
+
+      <div id="containerSix">
+        <div id="cases">
+          <div class="case"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/a99d4df9ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
