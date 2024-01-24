@@ -154,7 +154,7 @@
       </div>
 
       <h2>
-        III. Exercice 6 <br />
+        VI. Exercice 6 <br />
         <br />
 
         Créer une grille de morpion (3 x 3 cases). Cases de 200 x 200 pixels
@@ -188,7 +188,8 @@
       </div>
 
       <h2>
-        IV. Exercice 7 <br /><br />
+        VII. Exercice 7 <br />
+        <br />
         Le but de cet exercice est de faire apparaitre des carrés en appuyant
         sur une touche du clavier, et les faire disparaître en en pressant une
         autre
@@ -207,10 +208,30 @@
       </p>
 
       <div id="containerSix">
-        <div id="cases">
-          <div class="case"></div>
+        <div id="grid">
+          
         </div>
       </div>
+
+      <h2>VII. Exercice 8 <br><br>
+        Créer une page web affichant une zone de saisie où on pourra saisir une valeur en 
+        euros afin de donner la conversion en francs</h2> <br>
+
+        <p>La conversion (1 euro = 6.55957 francs) se fait en temps réel (pas de bouton de soumission du 
+            formulaire). Le résultat en francs est arrondi à 2 décimales. En cas de saisie non numérique un message 
+            affiche qu'on doit absolument saisir une valeur numérique.</p>
+
+
+        <div id="containerSept">
+            <img src="./img/fx.jpg" alt="courbes du cours des differentes monnaies">
+            <div id="converter">
+                <label for="valeur">Valeur en euros :</label>
+                <input type="number" name="valeurAConvertir" id="valeurEuro" cols="30" rows="1"></input>
+                <span id="converted"></span>
+            </div>
+        </div>
+
+
     </div>
     <script
       src="https://kit.fontawesome.com/a99d4df9ac.js"

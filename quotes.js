@@ -1,7 +1,7 @@
 const quotes = {
   "Ibn Battuta": {
     quote:
-      "Traveling - it leaves you speechless, then turns you into a storyteller.",
+      "Traveling ; it leaves you speechless, then turns you into a storyteller.",
     favorite: false,
   },
 

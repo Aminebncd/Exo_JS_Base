@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   vertical-align: top;
+  box-sizing: border-box;
 }
 
 #wrapper {
@@ -9,10 +10,11 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: rgb(64 126 217);
+  background: rgb(154,220,249);
+background: radial-gradient(circle, rgba(154,220,249,0.9969129939209727) 0%, rgba(82,35,181,1) 100%);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 0 15%;
+  padding: 0 10%;
   transition: 1s;
 }
 
@@ -33,6 +35,8 @@ h1 {
   align-items: center;
   justify-content: center;
   color: white;
+  border-radius: 15px;
+  border: 2px solid black;
 }
 
 /* ---------------EXO 2---------------- */
@@ -55,6 +59,8 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
   color: white;
+  border-radius: 15px;
+  border: 2px solid black;
 }
 
 #carreUn {
@@ -85,6 +91,8 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
   color: white;
+  border-radius: 15px;
+  border: 2px solid black;
 }
 
 /* ---------------EXO 3---------------- */
@@ -108,6 +116,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .carreTransformed {
@@ -175,7 +185,7 @@ i {
 }
 
 #socialName {
-  display: none;
+  
   opacity: 0;
   transition: transform 1s, opacity 0.3s, display 0.3s allow-discrete;
 }
@@ -205,11 +215,8 @@ i {
   background-color: #dad1ab;
   border-radius: 20px;
   padding: 50px;
-
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    -4px 11px 45px 21px rgba(69, 67, 59, 0.45);
   box-shadow: 0px 10px 13px -7px #0000004d,
-    -4px 11px 45px 21px rgba(69, 67, 59, 0.45);
+    -4px 11px 45px 21px rgba(0, 0, 0, 0.26);
 }
 
 .quoteCard {
@@ -217,26 +224,25 @@ i {
   padding: 30px 40px 30px 40px;
   background-color: rgb(221, 221, 204);
   margin: 20px;
+  cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.fav {
+
+.fav i {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
   margin-top: 10px;
   color: #00000000;
-}
-
-.fav i {
   transition: 0.2s;
   font-size: 1.5em;
 }
 
 .fav i.active {
-  color: rgba(183, 166, 15, 0.683);
+  color: rgb(212, 191, 0);
 }
 
 #quote {
@@ -333,14 +339,78 @@ i {
   margin: 200px 0 200px 0;
 }
 
-#cases {
-  width: 900px;
-  height: 900px;
-  display: grid;
+#grid {
+  width: 920px;
+  height: 920px;
+  display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+  border: 10px solid black;
 }
 
-.case {
+.pixel {
+  border: 0.5px solid black;
+  background-color: rgb(46, 46, 218);
   height: 60px;
   width: 60px;
+}
+
+/* ++++++++++++++++++++++++++EXO8+++++++++++++++++++++++++++++ */
+
+#containerSept {
+  margin: 200px 0;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+#converter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 350px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  background-color: rgba(88, 56, 150, 0.267);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+}
+
+#containerSept img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+input {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  font-weight: bold;
+  text-align: end;
+  padding: 5px;
+  max-width: 90%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  display:block;
+}
+
+#converted {
+  margin-top: 15px;
 }
